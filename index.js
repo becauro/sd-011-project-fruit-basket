@@ -9,6 +9,13 @@ function verifyFruitBasket(fruit) {
 // verifyFruitBasket("banana")
 // True
 
+const filterByName = (fruitName) => {
+  const filteredFruitBasket = fruitBasket.filter(
+    (fruit) => fruit === fruitName
+  );
+  return filteredFruitBasket;
+};
+
 function replaceFruit(fruitToBeReplaced, fruitToReplace) {
   const newFruit = fruitBasket.map((fruit) => fruitToBeReplaced === fruit ? fruitToReplace : fruit)
   return newFruit;
