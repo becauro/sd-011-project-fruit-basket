@@ -8,3 +8,10 @@ function verifyFruitBasket(fruit) {
 
 // verifyFruitBasket("banana")
 // True
+
+const filterByName = (fruitName) => {
+  const filteredFruitBasket = fruitBasket.filter(
+    (fruit) => fruit === fruitName
+  );
+  return filteredFruitBasket;
+};
