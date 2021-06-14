@@ -15,3 +15,8 @@ const filterByName = (fruitName) => {
   );
   return filteredFruitBasket;
 };
+
+function replaceFruit(fruitToBeReplaced, fruitToReplace) {
+  const newFruit = fruitBasket.map((fruit) => fruitToBeReplaced === fruit ? fruitToReplace : fruit)
+  return newFruit;
+}
