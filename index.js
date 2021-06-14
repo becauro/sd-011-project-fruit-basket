@@ -8,3 +8,8 @@ function verifyFruitBasket(fruit) {
 
 // verifyFruitBasket("banana")
 // True
+
+function replaceFruit(fruitToBeReplaced, fruitToReplace) {
+  const newFruit = fruitBasket.map((fruit) => fruitToBeReplaced === fruit ? fruitToReplace : fruit)
+  return newFruit;
+}
